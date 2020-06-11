@@ -11,6 +11,9 @@
         </b-col>
       </b-row>
       <b-row>
+        <b-col sm="12" style="overflow-y:auto; margin:20px;">
+          <h3>Technical Specifications</h3>
+        </b-col>
         <b-col sm="12" style="overflow-y:auto;">
           <b-table stacked striped bordered hover :items="data[0]['technical']"></b-table>
         </b-col>
