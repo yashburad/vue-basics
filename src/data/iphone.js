@@ -31,5 +31,10 @@ export default [
         Weight: "226 grams (7.97 ounces)",
       },
     ],
+    images: [
+      "https://images-na.ssl-images-amazon.com/images/I/61ers6OzvUL._SX679_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/51yJXy2SpeL._SX679_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/61jgfLBydjL._SX679_.jpg",
+    ],
   },
 ];

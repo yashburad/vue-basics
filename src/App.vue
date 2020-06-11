@@ -4,15 +4,15 @@
     <b-container fluid class="bv-example-row">
       <b-row>
         <b-col sm="6">
-          <Product :images="images" />
+          <Product :images="data[0]['images']" />
         </b-col>
         <b-col sm="6">
-          <ProductDescription :information="iphone" />
+          <ProductDescription :information="data" />
         </b-col>
       </b-row>
       <b-row>
         <b-col sm="12" style="overflow-y:auto;">
-          <b-table stacked striped bordered hover :items="iphone[0]['technical']"></b-table>
+          <b-table stacked striped bordered hover :items="data[0]['technical']"></b-table>
         </b-col>
       </b-row>
     </b-container>
@@ -23,7 +23,7 @@
 import Header from "./components/Header.vue";
 import Product from "./components/Product.vue";
 import ProductDescription from "./components/ProductDescription.vue";
-import iphone from "@/data/iphone.js";
+import data from "@/data/iphone.js";
 
 export default {
   name: "App",
@@ -34,20 +34,11 @@ export default {
   },
   data() {
     return {
-      images: [],
-      iphone
+      data
     };
   },
   mounted: function() {
-    this.images.push(
-      "https://images-na.ssl-images-amazon.com/images/I/61ers6OzvUL._SX679_.jpg"
-    );
-    this.images.push(
-      "https://images-na.ssl-images-amazon.com/images/I/51yJXy2SpeL._SX679_.jpg"
-    );
-    this.images.push(
-      "https://images-na.ssl-images-amazon.com/images/I/61jgfLBydjL._SX679_.jpg"
-    );
+    // this.images = data[0]["images"];
   }
 };
 </script>
